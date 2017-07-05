@@ -1,0 +1,43 @@
+[
+  {
+    "lugar" : [
+      {
+        "descricao" : "Cristo Redentor é uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, no Parque Nacional da Tijuca, com vista para a maior parte da cidade do Rio de Janeiro.",
+        "latitude" : -22.94675636291504,
+        "longitude" : -43.21767044067383,
+        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FCorcovado.png?alt=media&token=b4cd518c-a924-478b-8705-b4d49188264a",
+        "nome" : "Cristo Redentor",
+        "images" : [
+          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2299708592_503018e203_o.jpg?alt=media&token=ce3cd6cc-24aa-401b-bec8-09d4da7f8a59",
+          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2345939355_f9d076e227_o.jpg?alt=media&token=ed2f731b-0008-4e52-87c4-2fff845f3268",
+          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F3382253299_519392fac9_o.jpg?alt=media&token=40024fee-340e-4cc2-9a3a-3defe76da56e",
+          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F5646603471_3ec719bc7b_o.jpg?alt=media&token=0df8e361-17c3-42db-9256-95640bc5bcff"
+        ]
+      },
+      {
+        "descricao" : "O Bondinho do Pão de Açúcar é um teleférico localizado no bairro da Urca. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de Açúcar.",
+        "latitude" : -22.95475769042969,
+        "longitude" : -43.1667366027832,
+        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FBondinho.png?alt=media&token=9037aee8-6981-4420-8855-b4a9084999c1",
+        "nome" : "Bondinho do Pão de Açucar",
+        "images" : []
+      },
+      {
+        "descricao" : "Estádio Jornalista Mário Filho, mais conhecido como Maracanã, o popular Maraca, é um estádio de futebol localizado na Zona Norte do Rio de Janeiro e inaugurado em 1950.",
+        "latitude" : -22.912109375,
+        "longitude" : -43.23012924194336,
+        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FMaracana%CC%83.png?alt=media&token=2b5e0496-aa81-4293-92bd-b7430d64dd17",
+        "nome" : "Maracanã",
+        "images" : []
+      },
+      {
+        "descricao" : "\"A Praia de Copacabana é uma praia localizada no bairro de Copacabana, considerada uma das praias mais famosas do mundo, foi popularmente apelidada de \"Princesinha do Mar\"",
+        "latitude" : -22.97398948669434,
+        "logitude" : -43.1851921081543,
+        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2Fcopacabana.jpg?alt=media&token=5b256ab2-c2e7-4dac-afb5-a7bbea4c69be",
+        "nome" : "Praia de Copacabana",
+        "images" : []
+      }
+    ]
+  }
+]
