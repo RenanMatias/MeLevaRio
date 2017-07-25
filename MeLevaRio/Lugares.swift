@@ -13,7 +13,7 @@ struct lugares: Mappable {
     
     // PROPERTIES
     
-    var lugar: lugar?
+    var lugar: [lugar]?
 
     // INIT
     

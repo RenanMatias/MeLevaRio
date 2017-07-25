@@ -54,7 +54,7 @@ class LugaresViewModel {
     /// - Returns:
     func getLugaresDTO() -> lugarViewDTO {
         // Estamos selecionando o primeiro elemento/index do array de objetos
-        guard let lugar = lugaresResult.first?.lugar else {
+        guard let lugar = lugaresResult.first?.lugar?.first else {
             return lugarViewDTO()
         }
         
