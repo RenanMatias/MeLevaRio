@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import Firebase
 
 public typealias JSONDictionary = [String: Any]
 typealias ModelRemoteServiceCompletion = (_ objects: [lugares]?, _ error: Error?) -> Void
@@ -20,17 +21,25 @@ class LugaresRequest {
         DispatchQueue.global().async {
             
             // REQUEST
+            let ref = FIRDatabase.database().reference()
+            let lugaresRef = ref.child("0")
+        
+            lugaresRef.observe(FIRDataEventType.value, with: { (dados) in
+                
+                print(dados.value)
+                
+            })
             
-            completion(self.mockJSON(), nil)
+//            completion(self.mockJSON(), nil)
         }
     }
     
     func mockJSON() -> [lugares] {
-    let path = Bundle.main.path(forResource: "me-leva-rio-export", ofType: "json")
-    let data = try! Data(contentsOf: URL(fileURLWithPath: path!))
-    let jsonResult = try! JSONSerialization.jsonObject(with: data, options: []) as! [JSONDictionary]
-    let lugaresResult = jsonResult.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
-    return lugaresResult
+        let path = Bundle.main.path(forResource: "me-leva-rio-export", ofType: "json")
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path!))
+        let jsonResult = try! JSONSerialization.jsonObject(with: data, options: []) as! [JSONDictionary]
+        let lugaresResult = jsonResult.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
+        return lugaresResult
     }
     
 }

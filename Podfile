@@ -9,7 +9,8 @@ target 'MeLevaRio' do
   pod 'ObjectMapper', '~> 2.2'
 
   # Pods Firebase
-  pod 'Firebase'
+  pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end
