@@ -21,16 +21,10 @@ class LugaresRequest {
         DispatchQueue.global().async {
             
             // REQUEST
-            let ref = FIRDatabase.database().reference()
-            let lugaresRef = ref.child("0")
-        
-            lugaresRef.observe(FIRDataEventType.value, with: { (dados) in
-                
-                print(dados.value)
-                
-            })
+            self.getJSON()
             
 //            completion(self.mockJSON(), nil)
+            
         }
     }
     
@@ -41,5 +35,40 @@ class LugaresRequest {
         let lugaresResult = jsonResult.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
         return lugaresResult
     }
-    
+
+    func getJSON() { // -> [lugares] {
+        
+        if let url = URL(string: "https://me-leva-rio.firebaseio.com/0.json") {
+            
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                
+                if error == nil {
+                    print("Sucesso")
+                    
+                    if let data = data {
+                        
+                        do {
+                            
+                            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                            print(jsonResult)
+                            
+                        } catch  {
+                            
+                            print("Erro no retorno")
+                            
+                        }
+                    }
+
+                } else {
+                    print("Erro!")
+                    
+                    return ()
+                }
+                
+            }
+            
+            task.resume()
+            
+        }
+    }
 }

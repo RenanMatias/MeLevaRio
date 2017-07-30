@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Firebase
 
 struct lugarViewDTO {
     var descricao = ""
@@ -25,8 +24,6 @@ class ViewController: UIViewController, LugaresDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        let ref = FIRDatabase.database().reference()
         
         downloadLugares()
     }
