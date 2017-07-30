@@ -8,7 +8,6 @@
 
 import Foundation
 import ObjectMapper
-import Firebase
 
 public typealias JSONDictionary = [String: Any]
 typealias ModelRemoteServiceCompletion = (_ objects: [lugares]?, _ error: Error?) -> Void
@@ -21,7 +20,9 @@ class LugaresRequest {
         DispatchQueue.global().async {
             
             // REQUEST
-            self.getJSON()
+            self.getJSON({ lugares in
+                completion(lugares, nil)
+            })
             
 //            completion(self.mockJSON(), nil)
             
@@ -36,9 +37,9 @@ class LugaresRequest {
         return lugaresResult
     }
 
-    func getJSON() { // -> [lugares] {
+    func getJSON(_ completion: @escaping (_ lugares: [lugares]) -> Void) {
         
-        if let url = URL(string: "https://me-leva-rio.firebaseio.com/0.json") {
+        if let url = URL(string: "https://me-leva-rio.firebaseio.com/.json") {
             
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 
@@ -49,8 +50,10 @@ class LugaresRequest {
                         
                         do {
                             
-                            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-                            print(jsonResult)
+                            let jsonResult = try JSONSerialization.jsonObject(with: data, options: []) as! [JSONDictionary]
+                            let lugaresResult = jsonResult.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
+                            completion(lugaresResult)
+                            
                             
                         } catch  {
                             
@@ -71,4 +74,5 @@ class LugaresRequest {
             
         }
     }
+
 }
