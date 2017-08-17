@@ -39,40 +39,35 @@ class LugaresRequest {
 
     func getJSON(_ completion: @escaping (_ lugares: [lugares]) -> Void) {
         
-        if let url = URL(string: "https://me-leva-rio.firebaseio.com/.json") {
+        let url = URL(string: "https://me-leva-rio.firebaseio.com/.json")
+        
+        DispatchQueue.global().async {
             
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
                 
                 if error == nil {
-                    print("Sucesso")
-                    
                     if let data = data {
-                        
                         do {
+                            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
                             
-                            let jsonResult = try JSONSerialization.jsonObject(with: data, options: []) as! [JSONDictionary]
-                            let lugaresResult = jsonResult.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
-                            completion(lugaresResult)
+                            if let jsonArray = jsonResult as? [JSONDictionary] {
+                                
+                                let lugaresResult = jsonArray.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
+                                
+                                completion(lugaresResult)
+                            }
                             
                             
-                        } catch  {
                             
-                            print("Erro no retorno")
-                            
-                        }
+                        } catch  { print("Erro no retorno") }
                     }
-
-                } else {
-                    print("Erro!")
                     
-                    return ()
-                }
-                
+                } else { return () }
             }
             
             task.resume()
-            
         }
+        
     }
 
 }

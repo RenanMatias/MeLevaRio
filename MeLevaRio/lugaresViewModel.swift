@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: View Model Protocol
+
 protocol LugaresDelegate: class {
     // método que irá atualizar a interface com um parametro booleano de success, para indicar se o request foi feito com sucesso ou houve alguma falha na conexão com o backend.
     // em caso de sucesso atualizamos nossa interface, em caso de falha podemos exibir uma mensagem/alert ao usuário e dar a opção de tentar refazer a operação.
@@ -16,27 +18,36 @@ protocol LugaresDelegate: class {
 
 class LugaresViewModel {
     
-    // PROPERTIES
+    // MARK: Properties
     
     private var lugaresResult: [lugares] = []
+    private weak var delegate: LugaresDelegate?
     
-    var numberOfLugares: Int {
-        return lugaresResult.count
-    }
-    
-    // DELEGATE
-    
-    weak var delegate: LugaresDelegate?
-    
-    // INIT
+
+    // MARK: Init
     
     init(delegate: LugaresDelegate) {
         self.delegate = delegate
     }
     
+    // MARK: DataSource
+    
+    var numberOfSections: Int {
+        return 1
+    }
+    
+    var numberOfLugares: Int {
+        
+        guard let numberOfLugares = lugaresResult.first?.lugar?.count else { return 0 }
+        
+        return numberOfLugares
+//        return lugaresResult.first?.lugar?.count
+    }
+    
     // REQUEST
     
     func downloadObjects() {
+        
         LugaresRequest().downloadObjects { lugares, error in
             guard let objects = lugares, error == nil else {
                 // HOUVE UM ERRO NA CONEXÃO
@@ -49,12 +60,11 @@ class LugaresViewModel {
         }
     }
     
-    /// DTO
-    ///
-    /// - Returns:
-    func getLugaresDTO() -> lugarViewDTO {
+    // MARK: DTO
+
+    func getLugaresDTO(at item: Int) -> lugarViewDTO {
         // Estamos selecionando o primeiro elemento/index do array de objetos
-        guard let lugar = lugaresResult.first?.lugar?.first else {
+        guard let lugar = lugaresResult.first?.lugar?[item] else {
             return lugarViewDTO()
         }
         
