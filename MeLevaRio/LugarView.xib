@@ -21,7 +21,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-lP-Fgw">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Corcovado" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-lP-Fgw">
                     <rect key="frame" x="8" y="20" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="FLa-7h-YUv"/>
@@ -47,4 +47,7 @@
             <point key="canvasLocation" x="-797.5" y="-237.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Corcovado" width="375" height="361"/>
+    </resources>
 </document>
