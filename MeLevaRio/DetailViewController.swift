@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIScrollViewDelegate {
 
     // MARK: - Outlets
     
@@ -16,24 +16,64 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailPageControl: UIPageControl!
     @IBOutlet weak var meLevaRioButton: UIButton!
     @IBOutlet weak var descricaoTextView: UITextView!
-    
+
+    // MARK: - Circle Life
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        sliderScrollView.isPagingEnabled = true
+        sliderScrollView.delegate = self
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - DTO
+    
     func fill(dto: lugarViewDTO) {
+        
         DispatchQueue.main.async {
+        
             self.descricaoTextView.text = dto.descricao
+            self.title = dto.nome
+            
+            if let imagesUrls = dto.images {
+                
+                self.sliderScrollView.contentSize = CGSize(width: self.view.bounds.width * CGFloat(imagesUrls.count), height: 259)
+                self.sliderScrollView.showsHorizontalScrollIndicator = false
+                self.detailPageControl.numberOfPages = imagesUrls.count
+                
+                for (index, imageUrl) in imagesUrls.enumerated() {
+                    
+                    if let imageView = Bundle.main.loadNibNamed("ImageView", owner: self, options: nil)?.first as? ImageView {
+                        
+                        imageView.pictureImageView.downloadImage(with: imageUrl)
+                        self.sliderScrollView.addSubview(imageView)
+                        imageView.frame.size.width = self.view.bounds.size.width
+                        imageView.frame.origin.x = CGFloat(index) * self.view.bounds.width
+                    }
+                    
+                }
+                
+            }
+
         }
         
     }
     
+    // MARK: - Supporting
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let page = scrollView.contentOffset.x / scrollView.frame.size.width
+        detailPageControl.currentPage = Int(page)
+    }
 
     /*
     // MARK: - Navigation

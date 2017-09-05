@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="605.60000000000002" y="70.614692653673174"/>
         </scene>
-        <!--Bondinho do Pão de Açucar-->
+        <!--Detail View Controller-->
         <scene sceneID="tCx-Dx-Av8">
             <objects>
-                <viewController title="Bondinho do Pão de Açucar" id="Pfe-9J-oie" customClass="DetailViewController" customModule="MeLevaRio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pfe-9J-oie" customClass="DetailViewController" customModule="MeLevaRio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZdL-n6-jZF"/>
                         <viewControllerLayoutGuide type="bottom" id="ZAq-BF-CGk"/>
