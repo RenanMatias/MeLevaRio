@@ -14,7 +14,6 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var sliderScrollView: UIScrollView!
     @IBOutlet weak var detailPageControl: UIPageControl!
-    @IBOutlet weak var meLevaRioButton: UIButton!
     @IBOutlet weak var descricaoTextView: UITextView!
 
     // MARK: - Circle Life
@@ -73,6 +72,28 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let page = scrollView.contentOffset.x / scrollView.frame.size.width
         detailPageControl.currentPage = Int(page)
+    }
+    
+    // MARK: - ACTIONS
+    @IBAction func meLevaRioButton(_ sender: Any) {
+        
+        DispatchQueue.main.async {
+            
+            let alertController = UIAlertController(title: "Me Leva Rio", message: nil, preferredStyle: .actionSheet)
+            let mapsAction = UIAlertAction(title: "Maps", style: .default, handler: nil)
+            let googleMapsAction = UIAlertAction(title: "Google Maps", style: .default, handler: nil)
+            let wazeAction = UIAlertAction(title: "Waze", style: .default, handler: nil)
+            
+            let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+            
+            alertController.addAction(mapsAction)
+            alertController.addAction(googleMapsAction)
+            alertController.addAction(wazeAction)
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
     }
 
     /*

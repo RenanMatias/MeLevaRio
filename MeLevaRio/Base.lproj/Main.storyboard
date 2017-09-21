@@ -61,7 +61,7 @@
                                 <color key="currentPageIndicatorTintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-vJ-ci8">
-                                <rect key="frame" x="0.0" y="360" width="375" height="44"/>
+                                <rect key="frame" x="16" y="360" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.36078431372549019" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="exj-70-26X"/>
@@ -75,8 +75,11 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="meLevaRioButton:" destination="Pfe-9J-oie" eventType="touchUpInside" id="PZO-Sn-ZIF"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descrição do Lugar" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-ee-rxz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Descrição do Lugar" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-ee-rxz">
                                 <rect key="frame" x="0.0" y="424" width="375" height="243"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -94,9 +97,9 @@
                             <constraint firstItem="LlU-fv-gkh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="HOk-xX-Eoz"/>
                             <constraint firstItem="xyS-ee-rxz" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="20" id="Pf0-qt-uKB"/>
                             <constraint firstItem="LlU-fv-gkh" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="UU6-8O-rfX"/>
-                            <constraint firstAttribute="trailing" secondItem="ibt-vJ-ci8" secondAttribute="trailing" id="YxD-g5-QDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ibt-vJ-ci8" secondAttribute="trailing" constant="16" id="YxD-g5-QDZ"/>
                             <constraint firstItem="ibt-vJ-ci8" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="aMM-YJ-SFF"/>
-                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="acy-su-veO"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" constant="16" id="acy-su-veO"/>
                             <constraint firstAttribute="trailing" secondItem="xyS-ee-rxz" secondAttribute="trailing" id="fb9-r5-34S"/>
                             <constraint firstItem="kzI-UY-1Fh" firstAttribute="top" secondItem="LlU-fv-gkh" secondAttribute="bottom" id="gpo-wT-jl5"/>
                             <constraint firstItem="LlU-fv-gkh" firstAttribute="top" secondItem="ZdL-n6-jZF" secondAttribute="bottom" id="kz6-DG-Xth"/>
@@ -108,7 +111,6 @@
                     <connections>
                         <outlet property="descricaoTextView" destination="xyS-ee-rxz" id="eKX-cH-W2a"/>
                         <outlet property="detailPageControl" destination="kzI-UY-1Fh" id="8bZ-Cl-ei7"/>
-                        <outlet property="meLevaRioButton" destination="ibt-vJ-ci8" id="BLx-0c-Eav"/>
                         <outlet property="sliderScrollView" destination="LlU-fv-gkh" id="yk7-EQ-n1i"/>
                     </connections>
                 </viewController>

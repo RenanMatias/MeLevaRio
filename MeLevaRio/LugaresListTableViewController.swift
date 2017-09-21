@@ -7,26 +7,47 @@
 //
 
 import UIKit
+import MapKit
 
 struct lugarViewDTO {
     var descricao = ""
-    var latitude = 0
-    var longitude = 0
+    var latitude = 0.0
+    var longitude = 0.0
     var mainImage = ""
     var nome = ""
     var images: [String]?
 }
 
-class LugaresListTableViewController: UITableViewController, LugaresDelegate {
+class LugaresListTableViewController: UITableViewController, LugaresDelegate, CLLocationManagerDelegate {
 
     // MARK: - Properties
 
     lazy var viewModel: LugaresViewModel = LugaresViewModel(delegate: self)
+    let locationManager = CLLocationManager()
+    var myLocation = CLLocationCoordinate2D()
+    var refresher = UIRefreshControl()
+    
     
     // MARK: - VC Lyfe Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        refresher.addTarget(self, action: #selector(self.downloadLugares), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        if let lastLocation = locations.last {
+            myLocation = lastLocation.coordinate
+        }
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,6 +57,8 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate {
 
     func downloadLugares() {
         viewModel.downloadObjects()
+        tableView.reloadData()
+        refresher.endRefreshing()
     }
 
     // MARK: - UITableViewDataSource
@@ -50,13 +73,13 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate {
         return viewModel.numberOfLugares
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: LugarTableViewCell.self), for: indexPath) as! LugarTableViewCell
 
         // Configure the cell...
         let dto = viewModel.getLugaresDTO(at: indexPath.row)
-        cell.fill(dto: dto)
+        cell.fill(dto: dto, myLocation: myLocation)
         
         return cell
     }

@@ -15,9 +15,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUC-s2-yjm">
-                    <rect key="frame" x="116" y="22" width="254" height="100"/>
-                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUC-s2-yjm">
+                    <rect key="frame" x="116" y="22" width="186" height="100"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -28,6 +28,23 @@
                         <constraint firstAttribute="width" constant="100" id="q0v-Kq-hjA"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfL-2j-4Zi">
+                    <rect key="frame" x="310" y="52" width="60" height="40"/>
+                    <color key="backgroundColor" red="0.12549019607843137" green="0.36078431372549019" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="0NR-LM-gk7"/>
+                        <constraint firstAttribute="height" constant="40" id="pjx-bD-9e1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -36,11 +53,15 @@
                 <constraint firstItem="xUC-s2-yjm" firstAttribute="top" secondItem="Ipe-QM-Nb4" secondAttribute="top" constant="22" id="A9d-0N-jwU"/>
                 <constraint firstItem="Cg2-lP-Fgw" firstAttribute="leading" secondItem="Ipe-QM-Nb4" secondAttribute="leading" constant="8" id="DD2-5P-egr"/>
                 <constraint firstItem="Cg2-lP-Fgw" firstAttribute="top" secondItem="Ipe-QM-Nb4" secondAttribute="top" constant="20" id="DX5-rQ-TE5"/>
-                <constraint firstAttribute="trailing" secondItem="xUC-s2-yjm" secondAttribute="trailing" constant="5" id="W0V-k3-10P"/>
+                <constraint firstAttribute="trailing" secondItem="BfL-2j-4Zi" secondAttribute="trailing" constant="5" id="DXA-RS-tuQ"/>
+                <constraint firstItem="BfL-2j-4Zi" firstAttribute="centerY" secondItem="Ipe-QM-Nb4" secondAttribute="centerY" id="Pt7-6S-oRV"/>
+                <constraint firstAttribute="trailing" secondItem="xUC-s2-yjm" secondAttribute="trailing" constant="73" id="W0V-k3-10P"/>
+                <constraint firstAttribute="trailing" secondItem="BfL-2j-4Zi" secondAttribute="trailing" constant="5" id="Wh2-vg-ZMl"/>
                 <constraint firstItem="xUC-s2-yjm" firstAttribute="leading" secondItem="Cg2-lP-Fgw" secondAttribute="trailing" constant="8" id="afm-aZ-1i1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="distanceLabel" destination="BfL-2j-4Zi" id="A15-E4-9ns"/>
                 <outlet property="mainImageView" destination="Cg2-lP-Fgw" id="1i3-uD-KO8"/>
                 <outlet property="nomeLabel" destination="xUC-s2-yjm" id="hbd-Wz-9Os"/>
             </connections>

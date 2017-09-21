@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class LugarTableViewCell: UITableViewCell {
 
@@ -22,8 +23,8 @@ class LugarTableViewCell: UITableViewCell {
         
     }
 
-    func fill(dto: lugarViewDTO) {
-        view.fill(dto: dto)
+    func fill(dto: lugarViewDTO, myLocation: CLLocationCoordinate2D) {
+        view.fill(dto: dto, myLocation: myLocation)
     }
 
 }
