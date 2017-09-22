@@ -35,4 +35,11 @@ extension UIView {
         return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)!.first as! T
     }
     
+    func roundedFormat() {
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.clipsToBounds = true // Cut to the edges
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor(red: 32/255.0, green: 92/255.0, blue: 222/255.0, alpha: 1.0).cgColor
+    }
+    
 }

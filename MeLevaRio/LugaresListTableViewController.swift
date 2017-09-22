@@ -20,7 +20,7 @@ struct lugarViewDTO {
 
 class LugaresListTableViewController: UITableViewController, LugaresDelegate, CLLocationManagerDelegate {
 
-    // MARK: - Properties
+    //varRK: - Properties
 
     lazy var viewModel: LugaresViewModel = LugaresViewModel(delegate: self)
     let locationManager = CLLocationManager()
@@ -50,8 +50,7 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate, CL
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
         downloadLugares()
     }
 
@@ -109,14 +108,10 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate, CL
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "lugaresDetail" {
-            
-            if let indexPath = tableView.indexPathForSelectedRow {
-                
+    
+            if let indexPath = tableView.indexPathForSelectedRow, let detailController = segue.destination as? DetailViewController  {
                 let dto = viewModel.getLugaresDTO(at: indexPath.row)
-                let detailController = segue.destination as! DetailViewController
-                
-                detailController.fill(dto: dto)
-                
+                detailController.dto = dto
             }
             
         }
@@ -132,8 +127,6 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate, CL
                         negativeAction: "Cancelar") { action in
                             if action.title == "Tentar novamente" {
                                 self.downloadLugares()
-                            } else if action.title == "Cancelar" {
-                                // code
                             }
         }
     }

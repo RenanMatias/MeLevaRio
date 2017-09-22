@@ -85,27 +85,23 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-fv-gkh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-fv-gkh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="259"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="xyS-ee-rxz" secondAttribute="bottom" id="2nH-4O-GSz"/>
-                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="5qc-Aj-nkz"/>
-                            <constraint firstAttribute="trailing" secondItem="LlU-fv-gkh" secondAttribute="trailing" id="Dz4-6C-jyK"/>
-                            <constraint firstItem="LlU-fv-gkh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="HOk-xX-Eoz"/>
                             <constraint firstItem="xyS-ee-rxz" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="20" id="Pf0-qt-uKB"/>
-                            <constraint firstItem="LlU-fv-gkh" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="UU6-8O-rfX"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="top" secondItem="kzI-UY-1Fh" secondAttribute="bottom" id="QZX-rg-fqh"/>
                             <constraint firstAttribute="trailing" secondItem="ibt-vJ-ci8" secondAttribute="trailing" constant="16" id="YxD-g5-QDZ"/>
                             <constraint firstItem="ibt-vJ-ci8" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="aMM-YJ-SFF"/>
                             <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" constant="16" id="acy-su-veO"/>
                             <constraint firstAttribute="trailing" secondItem="xyS-ee-rxz" secondAttribute="trailing" id="fb9-r5-34S"/>
-                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="top" secondItem="LlU-fv-gkh" secondAttribute="bottom" id="gpo-wT-jl5"/>
-                            <constraint firstItem="LlU-fv-gkh" firstAttribute="top" secondItem="ZdL-n6-jZF" secondAttribute="bottom" id="kz6-DG-Xth"/>
                             <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="263" id="lBu-Dk-k2P"/>
                             <constraint firstItem="xyS-ee-rxz" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="qoJ-2C-DbZ"/>
-                            <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="LlU-fv-gkh" secondAttribute="bottom" constant="344" id="zQV-oZ-zNC"/>
+                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="yUz-RR-e7K"/>
                         </constraints>
                     </view>
                     <connections>

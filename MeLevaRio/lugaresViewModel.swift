@@ -41,7 +41,6 @@ class LugaresViewModel {
         guard let numberOfLugares = lugaresResult.first?.lugar?.count else { return 0 }
         
         return numberOfLugares
-//        return lugaresResult.first?.lugar?.count
     }
     
     // REQUEST

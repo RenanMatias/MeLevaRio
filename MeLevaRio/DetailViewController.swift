@@ -15,12 +15,12 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var sliderScrollView: UIScrollView!
     @IBOutlet weak var detailPageControl: UIPageControl!
     @IBOutlet weak var descricaoTextView: UITextView!
+    
+    // MARK: - Properties
+    var dto = lugarViewDTO()
+    
 
     // MARK: - Circle Life
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,11 +28,8 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         sliderScrollView.isPagingEnabled = true
         sliderScrollView.delegate = self
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        fill(dto: dto)
+        
     }
     
     // MARK: - DTO
@@ -95,15 +92,5 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
             
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
