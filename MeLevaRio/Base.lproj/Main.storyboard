@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,6 +58,9 @@
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-UY-1Fh">
                                 <rect key="frame" x="168" y="323" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="7PL-pD-lly"/>
+                                </constraints>
                                 <color key="pageIndicatorTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -64,7 +68,7 @@
                                 <rect key="frame" x="16" y="360" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.36078431372549019" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="exj-70-26X"/>
+                                    <constraint firstAttribute="height" constant="44" id="hbU-ga-GRA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <state key="normal" title="Me Leva Rio">
@@ -85,23 +89,27 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-fv-gkh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-fv-gkh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="259"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="9Ev-5I-RDQ"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="xyS-ee-rxz" secondAttribute="bottom" id="2nH-4O-GSz"/>
-                            <constraint firstItem="xyS-ee-rxz" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="20" id="Pf0-qt-uKB"/>
-                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="top" secondItem="kzI-UY-1Fh" secondAttribute="bottom" id="QZX-rg-fqh"/>
-                            <constraint firstAttribute="trailing" secondItem="ibt-vJ-ci8" secondAttribute="trailing" constant="16" id="YxD-g5-QDZ"/>
-                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="aMM-YJ-SFF"/>
-                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" constant="16" id="acy-su-veO"/>
-                            <constraint firstAttribute="trailing" secondItem="xyS-ee-rxz" secondAttribute="trailing" id="fb9-r5-34S"/>
-                            <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="263" id="lBu-Dk-k2P"/>
-                            <constraint firstItem="xyS-ee-rxz" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="qoJ-2C-DbZ"/>
-                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="yUz-RR-e7K"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="top" secondItem="kzI-UY-1Fh" secondAttribute="bottom" id="2Qd-Dc-XVS"/>
+                            <constraint firstItem="xyS-ee-rxz" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="20" id="3Ik-TH-P01"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="trailing" secondItem="faB-x4-bVN" secondAttribute="trailingMargin" id="4mi-oW-PUE"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leadingMargin" id="LQf-Hy-7v8"/>
+                            <constraint firstAttribute="trailing" secondItem="xyS-ee-rxz" secondAttribute="trailing" id="MiB-YU-0Hf"/>
+                            <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="xyS-ee-rxz" secondAttribute="bottom" id="OEi-mE-KsF"/>
+                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="SZK-6Q-ZSh"/>
+                            <constraint firstItem="LlU-fv-gkh" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="j9v-9o-i6r"/>
+                            <constraint firstItem="LlU-fv-gkh" firstAttribute="top" secondItem="ZdL-n6-jZF" secondAttribute="bottom" id="k1B-qA-H7e"/>
+                            <constraint firstAttribute="trailing" secondItem="LlU-fv-gkh" secondAttribute="trailing" id="ntb-Tg-5k3"/>
+                            <constraint firstItem="xyS-ee-rxz" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="t9x-H4-0l2"/>
+                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="top" secondItem="LlU-fv-gkh" secondAttribute="bottom" id="xN8-Ye-EAc"/>
                         </constraints>
                     </view>
                     <connections>
