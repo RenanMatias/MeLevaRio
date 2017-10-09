@@ -11,7 +11,7 @@
           "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F5646603471_3ec719bc7b_o.jpg?alt=media&token=0df8e361-17c3-42db-9256-95640bc5bcff",
           "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2299708592_503018e203_o.jpg?alt=media&token=ce3cd6cc-24aa-401b-bec8-09d4da7f8a59"
         ],
-        "latitude": -22.94675636291504,
+        "latitude": -22.97675636291504,
         "longitude": -43.21767044067383,
         "mainImage": "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FCorcovado.png?alt=media&token=b4cd518c-a924-478b-8705-b4d49188264a",
         "nome": "Cristo Redentor"
@@ -51,8 +51,8 @@
           "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F03.png?alt=media&token=fcc8649c-2216-4a1c-a8c6-daee9eb952fd",
           "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F01.jpg?alt=media&token=6302d7fb-7d6e-4737-8749-f550bc94789e"
         ],
-        "latitude": -22.97398948669434,
-        "logitude": -43.1851921081543,
+        "latitude": -22.9738729,
+        "logitude": -43.1853100,
         "mainImage": "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2Fcopacabana.jpg?alt=media&token=5b256ab2-c2e7-4dac-afb5-a7bbea4c69be",
         "nome": "Praia de Copacabana"
       },

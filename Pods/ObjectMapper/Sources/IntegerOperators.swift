@@ -91,7 +91,7 @@ public func <- <T: UnsignedInteger>(left: inout T!, right: Map) {
 /// Convert any value to `SignedInteger`.
 private func toSignedInteger<T: SignedInteger>(_ value: Any?) -> T? {
 	guard let value = value else { return nil }
-	let max: IntMax
+	let max: Int64
 	switch value {
 	case let x as Int: max = .init(x)
 	case let x as Int8: max = .init(x)
@@ -111,7 +111,7 @@ private func toSignedInteger<T: SignedInteger>(_ value: Any?) -> T? {
 /// Convert any value to `UnsignedInteger`.
 private func toUnsignedInteger<T: UnsignedInteger>(_ value: Any?) -> T? {
 	guard let value = value else { return nil }
-	let max: UIntMax
+	let max: UInt64
 	switch value {
 	case let x as Int: max = .init(x)
 	case let x as Int8: max = .init(x)

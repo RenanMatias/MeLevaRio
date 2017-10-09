@@ -24,8 +24,6 @@ class LugaresRequest {
                 completion(lugares, nil)
             })
             
-//            completion(self.mockJSON(), nil)
-            
         }
     }
     
@@ -53,7 +51,6 @@ class LugaresRequest {
                             if let jsonArray = jsonResult as? [JSONDictionary] {
                                 
                                 let lugaresResult = jsonArray.flatMap { lugares(map: Map(mappingType: .fromJSON, JSON: $0)) }
-                                
                                 completion(lugaresResult)
                             }
                             

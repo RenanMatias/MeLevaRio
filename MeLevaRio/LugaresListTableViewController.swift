@@ -20,7 +20,7 @@ struct lugarViewDTO {
 
 class LugaresListTableViewController: UITableViewController, LugaresDelegate, CLLocationManagerDelegate {
 
-    //varRK: - Properties
+    //MARK: - Properties
 
     lazy var viewModel: LugaresViewModel = LugaresViewModel(delegate: self)
     let locationManager = CLLocationManager()
@@ -29,18 +29,6 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate, CL
     
     
     // MARK: - VC Lyfe Cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-        
-        refresher.addTarget(self, action: #selector(self.downloadLugares), for: UIControlEvents.valueChanged)
-        tableView.addSubview(refresher)
-    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
@@ -52,9 +40,17 @@ class LugaresListTableViewController: UITableViewController, LugaresDelegate, CL
     
     override func viewWillAppear(_ animated: Bool) {
         downloadLugares()
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        refresher.addTarget(self, action: #selector(self.downloadLugares), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
     }
 
-    func downloadLugares() {
+    @objc func downloadLugares() {
         viewModel.downloadObjects()
         tableView.reloadData()
         refresher.endRefreshing()
