@@ -78,8 +78,8 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
             let alertController = UIAlertController(title: "Me Leva Rio", message: nil, preferredStyle: .actionSheet)
             
             let mapsAction = UIAlertAction(title: "Mapas", style: .default, handler: { action in self.meLevaRioMaps() })
-            let googleMapsAction = UIAlertAction(title: "Google Maps", style: .default, handler: { action in self.meLevaRioGoogleMaps() })
-            let wazeAction = UIAlertAction(title: "Waze", style: .default, handler: { action in self.meLevaRioWaze() })
+            let googleMapsAction = UIAlertAction(title: "Google Maps", style: .default, handler: { action in self.meLevaRioApps(url: "comgooglemaps://")})
+            let wazeAction = UIAlertAction(title: "Waze", style: .default, handler: { action in self.meLevaRioApps(url: "waze://") })
             
             let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
             
@@ -112,72 +112,60 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    func meLevaRioGoogleMaps() {
+    func meLevaRioApps(url: String) {
         
 //         A partir do iOS 9, o aplicativo deve declarar os esquemas de URL no Info.plist.
 //        <key>LSApplicationQueriesSchemes</key>
 //        <array>
 //          <string>googlechromes</string>
 //          <string>comgooglemaps</string>
+//          <string>waze</string>
 //        </array>
         
+        let urlOpen: String
+        let appName: String
+        let itunesLink: String
         let application = UIApplication.shared
         
-        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+        switch url {
+        case "comgooglemaps://":
+            urlOpen =   "comgooglemaps://?" +
+                        "daddr=\(dto.latitude),\(dto.longitude)" +
+                        "&zoom=16" +
+                        "&views=traffic&" +
+                        "directionsmode=driving"
+            appName = "Google Maps"
+            itunesLink = "http://itunes.apple.com/us/app/id585027354"
             
-            application.open(URL(string:
-                "comgooglemaps://?" +
-                "daddr=\(dto.latitude),\(dto.longitude)" +
-                "&zoom=16" +
-                "&views=traffic&" +
-                "directionsmode=driving")!,
-                             options: [:],
-                             completionHandler: nil)
+        default:
             
-        } else {
-            
-            showNativeAlert(title: "Google Maps não encontrado",
-                            message: "Para usar o Google Maps, será necessário instalar o aplicativo em seu device.",
-                            afirmativeAction: "Instalar",
-                            negativeAction: "Cancelar",
-                            completeBlock: { (action) in
-                                application.open(NSURL(string:"http://itunes.apple.com/us/app/id585027354")! as URL,
-                                                       options: [:],
-                                                       completionHandler: nil)
-            })
+            urlOpen = "https://waze.com/ul?ll=\(dto.latitude),\(dto.longitude)&navigate=yes"
+            appName = "Waze"
+            itunesLink = "http://itunes.apple.com/us/app/id323229106"
             
         }
-
-    }
-    
-    func meLevaRioWaze() {
-        // A partir do iOS 9, o aplicativo deve declarar os esquemas de URL no Info.plist.
-        //        <key>LSApplicationQueriesSchemes</key>
-        //        <array>
-        //          <string>waze</string>
-        //        </array>
         
-        let application = UIApplication.shared
         
-        if (UIApplication.shared.canOpenURL(URL(string:"https://waze.com/ul")!)) {
+        if (UIApplication.shared.canOpenURL(URL(string: url)!)) {
             
-            application.open(URL(string:"https://waze.com/ul?ll=\(dto.latitude),\(dto.longitude)&navigate=yes")!,
+            application.open(URL(string: urlOpen)!,
                              options: [:],
                              completionHandler: nil)
             
         } else {
             
-            showNativeAlert(title: "Waze não encontrado",
-                            message: "Para usar o Waze, será necessário instalar o aplicativo em seu device.",
+            showNativeAlert(title: "\(appName) não encontrado",
+                            message: "Para usar o \(appName), será necessário instalar o aplicativo em seu device.",
                             afirmativeAction: "Instalar",
                             negativeAction: "Cancelar",
                             completeBlock: { (action) in
-                                application.open(NSURL(string:"http://itunes.apple.com/us/app/id323229106")! as URL,
+                                application.open(NSURL(string: itunesLink)! as URL,
                                                  options: [:],
                                                  completionHandler: nil)
             })
             
         }
+        
     }
     
 }
