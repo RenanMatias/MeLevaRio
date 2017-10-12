@@ -6,7 +6,7 @@ target 'MeLevaRio' do
   use_frameworks!
 
   # Pods for MeLevaRio
-  pod 'ObjectMapper', '~> 2.2'
+  pod 'ObjectMapper'
   pod 'PINRemoteImage'
 
 end

@@ -11,7 +11,7 @@ PODS:
     - PINRemoteImage/Core
 
 DEPENDENCIES:
-  - ObjectMapper (~> 2.2)
+  - ObjectMapper
   - PINRemoteImage
 
 SPEC CHECKSUMS:
@@ -20,6 +20,6 @@ SPEC CHECKSUMS:
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
 
-PODFILE CHECKSUM: ddace24961390851f6b932c04fa978e0f7e91117
+PODFILE CHECKSUM: 315706069b7f211c54e46015a6ea0bc21ab1e8fe
 
 COCOAPODS: 1.2.0
