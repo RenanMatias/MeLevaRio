@@ -1,43 +1,94 @@
-[
-  {
-    "lugar" : [
-      {
-        "descricao" : "Cristo Redentor é uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, no Parque Nacional da Tijuca, com vista para a maior parte da cidade do Rio de Janeiro.",
-        "latitude" : -22.94675636291504,
-        "longitude" : -43.21767044067383,
-        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FCorcovado.png?alt=media&token=b4cd518c-a924-478b-8705-b4d49188264a",
-        "nome" : "Cristo Redentor",
-        "images" : [
-          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2299708592_503018e203_o.jpg?alt=media&token=ce3cd6cc-24aa-401b-bec8-09d4da7f8a59",
-          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2345939355_f9d076e227_o.jpg?alt=media&token=ed2f731b-0008-4e52-87c4-2fff845f3268",
-          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F3382253299_519392fac9_o.jpg?alt=media&token=40024fee-340e-4cc2-9a3a-3defe76da56e",
-          "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F5646603471_3ec719bc7b_o.jpg?alt=media&token=0df8e361-17c3-42db-9256-95640bc5bcff"
-        ]
-      },
-      {
-        "descricao" : "O Bondinho do Pão de Açúcar é um teleférico localizado no bairro da Urca. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de Açúcar.",
-        "latitude" : -22.95475769042969,
-        "longitude" : -43.1667366027832,
-        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FBondinho.png?alt=media&token=9037aee8-6981-4420-8855-b4a9084999c1",
-        "nome" : "Bondinho do Pão de Açucar",
-        "images" : []
-      },
-      {
-        "descricao" : "Estádio Jornalista Mário Filho, mais conhecido como Maracanã, o popular Maraca, é um estádio de futebol localizado na Zona Norte do Rio de Janeiro e inaugurado em 1950.",
-        "latitude" : -22.912109375,
-        "longitude" : -43.23012924194336,
-        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FMaracana%CC%83.png?alt=media&token=2b5e0496-aa81-4293-92bd-b7430d64dd17",
-        "nome" : "Maracanã",
-        "images" : []
-      },
-      {
-        "descricao" : "\"A Praia de Copacabana é uma praia localizada no bairro de Copacabana, considerada uma das praias mais famosas do mundo, foi popularmente apelidada de \"Princesinha do Mar\"",
-        "latitude" : -22.97398948669434,
-        "logitude" : -43.1851921081543,
-        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2Fcopacabana.jpg?alt=media&token=5b256ab2-c2e7-4dac-afb5-a7bbea4c69be",
-        "nome" : "Praia de Copacabana",
-        "images" : []
-      }
-    ]
-  }
-]
+[ {
+  "lugar" : [ {
+    "descricao" : "O antigo Aqueduto da Carioca, conhecido como Arcos da Lapa, é um dos cartões postais da cidade, além de ser o símbolo mais representativo do Rio Antigo preservado na região boêmia da Lapa. A estrutura, em pedra argamassada, apresenta estilo românico, caiada, possui 42 arcos duplos e óculos na parte superior. Os Arcos da Lapa são considerados a obra arquitetônica de maior porte empreendida no Brasil durante o período colonial. Ao seu redor, estão duas das mais importantes casas de shows da cidade: a Fundição Progresso e o Circo Voador.",
+    "images" : [ "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Arcos%20da%20Lapa%2Fimages%2F1.jpg?alt=media&token=04d93b0d-d8e2-4f5e-9b93-17bc26b2b004", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Arcos%20da%20Lapa%2Fimages%2F2.jpg?alt=media&token=b83404f1-297f-429c-bcdf-adace5221b56", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Arcos%20da%20Lapa%2Fimages%2F3.jpg?alt=media&token=094e6234-63e2-4117-a482-d35a9ecfa400", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Arcos%20da%20Lapa%2Fimages%2F4.jpg?alt=media&token=70a4eb18-586d-4287-96d4-2f82cdca0812" ],
+    "latitude" : -22.913292,
+    "longitude" : -43.180017,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Arcos%20da%20Lapa%2Farcos_lapa_main2.jpg?alt=media&token=33ede867-948b-4819-a437-ca6d208567dd",
+    "nome" : "Arcos da Lapa"
+  }, {
+    "descricao" : "O Aterro do Flamengo é conhecido por ser um dos maiores complexos de lazer da cidade: o local é ideal para quem quer aproveitar um dia de sol e fazer atividades ao ar livre. A área – que vai do Aeroporto Santos Dumont, no Centro, até o início da praia de Botafogo, passando pelos bairros da Glória e do Flamengo – é procurada, principalmente nos finais de semana, para a prática de esportes como caminhada, corrida, bicicleta, skate, patins e outros. \n\nNa área conhecida como Parque Brigadeiro Eduardo Gomes, na Glória, o público pode aproveitar quadras de futebol, tênis, vôlei e basquete, além de conferir os jardins projetados por Roberto Burle Marx. As pistas do Aterro ficam fechadas aos domingos, das 07h até 18h, assim como as orlas de Copacabana, Ipanema e Leblon.",
+    "images" : [],
+    "latitude" : -22.930353,
+    "longitude" : -43.172088,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Aterro%20do%20Flamengo%2F7375256086_8ceb355ed8_k-1024x680.jpg?alt=media&token=f85fbb18-b61d-4e3c-8994-3c746215fe42",
+    "nome" : "Aterro do Flamengo"
+  }, {
+    "descricao" : "Partindo da Praia Vermelha, os visitantes pegam o primeiro bonde leva ao morro da Urca, e de lá um segundo bondinho os leva até o topo do morro do Pão de Açúcar, que fica a 396 metros do nível do mar. Diferentes histórias justificam o nome desse ponto turístico; a mais popular diz que durante os séculos XVI e XVIII, no auge da produção de cana de açúcar, os produtores armazenavam os blocos de açúcar em formas para serem exportados, e a semelhança do objeto com o morro do Pão do Açúcar deu origem ao nome. \n\nInaugurado em 1912, o Bondinho do Pão de Açúcar foi o primeiro teleférico do Brasil e terceiro no mundo, ligando o Morro da Urca ao Morro do Pão de Açúcar. Desde então, mais de 40 milhões de pessoas já utilizaram os bondinhos. \n\n Do alto dos dois morros se descortina uma deslumbrante paisagem da cidade, incluindo a enseada de Botafogo, a orla de Copacabana e a entrada da Baía de Guanabara. No verão, o anfiteatro localizado no alto do Morro da Urca é palco para shows e eventos noturnos, aliando divertimento a um belíssimo visual das luzes da cidade.",
+    "images" : [ "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FpainelImages%2FDSC_10016b.JPG?alt=media&token=2b6893ee-e1ad-4bc7-8dd0-6f53ab387733", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FpainelImages%2F02.jpg?alt=media&token=6505ff7c-619f-4fd2-87f8-9ac9ea25fb7c", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FpainelImages%2F03.jpg?alt=media&token=ad8e9e27-f799-4c0b-9028-6f22d21d5501", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FpainelImages%2F04.jpg?alt=media&token=e7a1c815-7df3-4018-ba05-5d0f969f4d66" ],
+    "latitude" : -22.95475769042969,
+    "longitude" : -43.1667366027832,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Bondinho%20do%20P%C3%A3o%20de%20A%C3%A7ucar%2FBondinho.png?alt=media&token=9037aee8-6981-4420-8855-b4a9084999c1",
+    "nome" : "Bondinho do Pão de Açucar"
+  }, {
+    "descricao" : "No alto do morro do Corcovado está instalado o Cristo Redentor, um dos pontos turísticos mais procurados do Rio de Janeiro. Maior e mais famosa escultura Art Déco do mundo, a estátua do Cristo Redentor começou a ser planejada em 1921 e foi desenvolvida pelo engenheiro Heitor da Silva Costa ao longo de cinco anos de trabalho, de 1926 à 1931, o ano de inauguração do monumento. \n\nEstá situado no Parque Nacional da Tijuca, a 710 metros do nível do mar, de onde se pode apreciar uma das mais belas vistas da cidade. Ao todo são 220 degraus que levam até os pés da famosa estátua, eleita uma das Sete Maravilhas do Mundo em votação organizada em 2007 pela instituição Suíça New 7 Wonders Foundation. O monumento é acessível via trem, van ou carro. \n\nPara chegar ao monumento, há um agradável passeio de trem que, durante vinte minutos, atravessa a Mata Atlântica até chegar ao topo do Corcovado. Para facilitar o acesso dos visitantes, foram construídos três elevadores panorâmicos e quatro escadas rolantes. O visual é estonteante, o que torna o programa imperdível para quem visita a cidade.",
+    "images" : [ "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2FCR1.jpg?alt=media&token=20c5f4c8-e842-4611-8b3d-3db9868a9410", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2FChrist_on_Corcovado_mountain.JPG?alt=media&token=4c97ffbd-fa0d-466d-a497-46638d4e9cbb", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2345939355_f9d076e227_o.jpg?alt=media&token=ed2f731b-0008-4e52-87c4-2fff845f3268", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F3382253299_519392fac9_o.jpg?alt=media&token=40024fee-340e-4cc2-9a3a-3defe76da56e", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F5646603471_3ec719bc7b_o.jpg?alt=media&token=0df8e361-17c3-42db-9256-95640bc5bcff", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FpainelImages%2F2299708592_503018e203_o.jpg?alt=media&token=ce3cd6cc-24aa-401b-bec8-09d4da7f8a59" ],
+    "latitude" : -22.94675636291504,
+    "longitude" : -43.21767044067383,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Cristo%20Redentor%2FCorcovado.png?alt=media&token=b4cd518c-a924-478b-8705-b4d49188264a",
+    "nome" : "Cristo Redentor"
+  }, {
+    "descricao" : "Fundado em 1808 por Dom João VI, o Jardim Botânico é um importante ponto turístico da cidade e amplamente visitado por pesquisadores que estudam as centenas de espécies que o habitam. Com área total de 137 hectares, sendo 54 de área cultivada, o Jardim Botânico abriga coleções raras de bromélias e orquídeas, além de árvores centenárias e plantas exóticas. \n\nO jardim também tem obras do início do século XVI, guardando um rico patrimônio histórico e cultural. Entre os monumentos destacam-se as estátuas de Eco e Narciso de mestre Valentim, o Portal da Academia de Belas Artes, projetado por Grandjean de Montigny, e o Jardim Japonês, criado em 1935 a partir da doação de 65 espécies de plantas típicas do Japão. O parque também é um excelente local para observação de pássaros, pois conta com mais de cem diferentes espécies nas copas e troncos de suas árvores. \n\nO Museu do Meio Ambiente e o Espaço Tom Jobim, palcos de shows, exposições e eventos culturais importantes da cidade, também compõem as atrações do Jardim Botânico.",
+    "images" : [],
+    "latitude" : -22.969279,
+    "longitude" : -43.221848,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Jardim%20Bot%C3%A2nico%2F19761016088_7277db664a_k-678x1024.jpg?alt=media&token=a51979f8-5488-44cf-83fa-3e9763adab8d",
+    "nome" : "Jardim Botânico"
+  }, {
+    "descricao" : "O Maracanã já foi cenário dos mais importantes clássicos do futebol brasileiro e recebeu momentos históricos do futebol internacional. Fatos monumentais, como o milésimo gol do Rei Pelé, em 1969, também aconteceram nos gramados do templo do futebol brasileiro. \n\nInaugurado em 16 de junho de 1950, já recebeu jogos da Copa do Mundo daquele ano e algumas partidas do Mundial de 2014. Também sediou jogos da Copa das Confederações de 2013, cerimônias de abertura e encerramento dos Jogos Pan-Americanos de 2007 e dos Jogos Olímpicos e Paralímpicos, em 2016. Além de competições esportivas, o Maracanã já foi palco de importantes eventos, como shows de Madonna, Rolling Stones, Paul McCartney, Tina Turner e missas campais do então Papa João Paulo II, em 1980 e 1997. \n\nO estádio passou por uma grande reforma e com nova capacidade total para 78.838 torcedores. O novo Maracanã foi modernizado e hoje preenche quesitos internacionais de segurança, logística e sustentabilidade. O uso de energia solar e a coleta de água da chuva, reutilizada nos 292 banheiros e 4 vestiários, são medidas importantes de economia e responsabilidade. Mais 360 câmeras de segurança mantém a vigilância permanente do estádio, que recebeu duas novas rampas de acesso, além das tradicionais Bellini e UERJ, além de 12 escadas rolantes e acréscimo de elevadores, que hoje totalizam 17.  \n\n Novos bares e lanchonetes dão mais conforto para o público, que conta ainda com cadeiras retráteis divididas por cores e produzidas com materiais certificados, como garrafas PET. Dividido em cinco níveis e nos setores norte, sul, leste e oeste, o Maracanã aposta em divisões para facilitar o acesso e localização dos torcedores. Portão, setor, bloco, nível, fila e cadeira são as subdivisões que permitirão ao torcedor localizar seu lugar com maior segurança e conforto. Há ainda assentos para obesos, área reservada para pessoas com necessidades especiais e piso tátil para deficientes visuais.",
+    "images" : [ "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FpainelImages%2F01.png?alt=media&token=49e9288f-04fc-41a8-92c1-fec7c638df3e", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FpainelImages%2F02.jpg?alt=media&token=72eefe0f-e019-48b7-ada0-d0af528f5632", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FpainelImages%2F03.jpg?alt=media&token=f2a27aeb-765d-403d-927d-3bdad17b0035", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FpainelImages%2F04.jpg?alt=media&token=48ab6ebc-7fd6-4559-bbb6-32f74a6a128f", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FpainelImages%2F05.jpg?alt=media&token=bfdceb74-ca4f-43a9-a35c-5c606b7157ea" ],
+    "latitude" : -22.912109375,
+    "longitude" : -43.23012924194336,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Maraca%C3%B1a%2FMaracana%CC%83.png?alt=media&token=2b5e0496-aa81-4293-92bd-b7430d64dd17",
+    "nome" : "Maracanã"
+  }, {
+    "descricao" : "Perguntas como “de onde viemos?” e “para onde vamos?” permeiam o imaginário da população mundial e são comuns a todos os povos. Pensando nessas questões, e em tantas outras, o visionário projeto do Museu do Amanhã tomou forma e se torna, então, um amplo espaço de debate e estudo sobre o impacto de nossas ações e como podemos alterar o cenário decadente que se avizinha. Instituições renomadas mundialmente, como o MIT (Instituto de Tecnologia de Massachussets), o Google e a NASA, fazem sua parte do esforço coletivo de estudo de como os indivíduos podem transformar nosso destino na Terra. A proposta do Museu do Amanhã é pioneira em todo o mundo: não há sequer um espaço similar onde atividades culturais e de pesquisa tenham essa proposta de estudo do nosso amanhã.",
+    "images" : [],
+    "latitude" : -22.893989,
+    "longitude" : -43.179454,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Museu%20do%20Amanh%C3%A3%2FMuseu-do-Amanha%CC%83-%C2%A9-Alexandre-Macieira-4947-1024x678.jpg?alt=media&token=63315053-651e-4a87-a361-aeee60d8c2a0",
+    "nome" : "Museu do Amanhã"
+  }, {
+    "descricao" : "O parque não é superlativo apenas em suas medidas, sendo o terceiro maior da cidade, mas também nos itens e opções de lazer que oferece aos moradores da Zona Norte carioca. Quadras de vôlei, basquete e futebol, além de um campo de grama sintética para partidas de futebol dividem o espaço com fontes, riachos, quiosques, pista de skate, pomar e brinquedos. \n\nÁrvores nativas, palmeiras, além de flores e quilômetros de grama, tornando o espaço amplamente arborizado. Práticas sustentáveis, como o controle de resíduos sólidos, uso da água da chuva, captação e uso de energia solar e iluminação de baixo consumo fazem parte do dia a dia do parque. O parque, que acompanha a linha férrea que corta o bairro, conta ainda com dois espaços culturais: a Arena Carioca, que receberá apresentações culturais, e a Praça do Samba, espaço dedicado ao gênero musical tão influente no bairro que conta com suas das mais antigas agremiações cariocas – Portela e Império Serrano.",
+    "images" : [],
+    "latitude" : -22.863381,
+    "longitude" : -43.345341,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Parque%20Madureira%2F8318434423_14a1a684fb_h-1024x678.jpg?alt=media&token=e319b6eb-7600-4e81-9fa0-868f24859b8f",
+    "nome" : "Parque Madureira"
+  }, {
+    "descricao" : "Originário de um antigo engenho de açúcar, o parque faz parte da memória histórica da cidade. Em 1957, foi tombado pelo Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN) como patrimônio histórico e cultural da cidade do Rio de Janeiro. \n\nProjetado em 1840 pelo paisagista inglês John Tyndale, o belíssimo jardim de estilo romântico europeu divide as atenções com a floresta nativa de Mata Atlântica. Destacam-se também as palmeiras imperiais, os lagos e ilhas artificiais, além das cavernas espalhadas pelo parque e os aquários incrustados nas paredes com diversos peixes. Muito procurado por famílias, especialmente nos finais de semana, o Parque Lage conta com boa estrutura para a diversão das crianças, com brinquedos e grande área ao ar livre. É muito comum a realização de piqueniques no parque. \n\nNa principal edificação do espaço, um casarão do séc. XIX, funciona a Escola de Artes Visuais do Parque Lage (EAV), que oferece formação gratuita para artistas iniciantes, cursos de capacitação em arte para jovens, além de uma intensa programação de exposições, seminários, palestras e mostras de vídeos. A EAV também dispõe de uma biblioteca e um auditório com capacidade para 150 pessoas. No pátio central da mansão, à beira da piscina, o Bistrô Plage oferece um delicioso café da manhã, além de almoço e jantar com produtos orgânicos que podem ser saboreados junto aos eventos de arte e música que acontecem no local durante todo ano. Em muitos finais de semana, o Parque Lage atravessa a madrugada com festas e festivais de arte e música patrocinados por iniciativas públicas e privadas. \n\nDica de ouro: o Parque Lage é o point favorito dos cariocas apaixonados. Não tem erro, leve seu par!",
+    "images" : [],
+    "latitude" : -22.961244,
+    "longitude" : -43.213110,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Parque%20Lage%2F7295579776_01769520af_k-1024x680.jpg?alt=media&token=487a2204-9f31-4360-afcd-6c3571c39735",
+    "nome" : "Parque Lage"
+  }, {
+    "descricao" : "Carinhosamente apelidada pela população de Princesinha do Mar, uma canção popular dos brasileiros João de Barro – o Braguinha – e Alberto Ribeiro, a praia de Copacabana localiza-se no bairro de mesmo nome, na zona Sul da cidade do Rio de Janeiro. Copacabana conta com bicicletários, ciclovia, quiosques, hotéis, bares e restaurantes, frequentados tanto de dia como à noite. Possui também dois Fortes Militares, um em cada extremidade da praia, com vistas panorâmicas, abertos à visitação. \n\nTamanho fascínio também se dá pelo belíssimo calçadão da Avenida Atlântica em pedras portuguesas brancas e pretas, que formam um lindo mosaico no formato de ondas, inspirado no calçadão de Lisboa e usado por Roberto Burle Marx na praia. Possuem grande infraestrutura de hotéis e quiosques, que atrem turistas do mundo inteiro. \n\nPalco da maior festa de Réveillon do planeta, com seus fogos mundialmente conhecidos, Copacabana reúne mais de três milhões de pessoas a cada passagem de ano. Suas areias também abrigam grandiosos eventos como os Jogos Pan-americanos do Rio 2007, campeonatos mundiais de futebol de areia e campeonatos mundiais de vôlei.",
+    "images" : [ "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F05.jpg?alt=media&token=baf1ee9b-a00a-451f-a825-a11ed038ce96", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F02.png?alt=media&token=f2b206fc-3393-430d-9259-34c5edd63bcb", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F03.png?alt=media&token=fcc8649c-2216-4a1c-a8c6-daee9eb952fd", "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2FpainelImages%2F01.jpg?alt=media&token=6302d7fb-7d6e-4737-8749-f550bc94789e" ],
+    "latitude" : -22.971459,
+    "longitude" : -43.184024,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Copacabana%2Fcopacabana.jpg?alt=media&token=5b256ab2-c2e7-4dac-afb5-a7bbea4c69be",
+    "nome" : "Praia de Copacabana"
+  }, {
+    "descricao" : "Suas areias marcam a história da Bossa Nova. Ipanema está entre as praias preferidas dos cariocas pelo seu charme e descontração, mundialmente conhecida pela música “Garota de Ipanema”, de Tom Jobim e Vinicius de Morais. A praia, com 2 km de extensão, do Arpoador ao Jardim de Alah, é ponto de encontro de jovens moradores e turistas encantados, principalmente próximo ao posto 9. A praia é utilizada para a prática de diversos esportes, além de ser palco de shows ao ar livre. Entre as atividades favoritas estão o surf, frescobol, vôlei, futebol e futevôlei. Cariocas e turistas costumam sentar em suas areias, ao fim da tarde, para bater papo e aplaudir o magnífico pôr do sol. Aos domingos, as pistas da orla são interditadas até as 18h para veículos e liberadas para o lazer dos cariocas. Leve sua bicicleta ou seu skate!",
+    "images" : [],
+    "latitude" : -22.987111,
+    "longitude" : -43.199601,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Praia%20de%20Ipanema%2F4152570071_5d0d7f29cb_o-1024x683.jpg?alt=media&token=3389db7a-b55f-4cd9-a434-7af23e2ae02b",
+    "nome" : "Praia de Ipanema"
+  }, {
+    "descricao" : "Foi residência oficial da família real de 1808 até a Proclamação da República, em 1889. Vindo de Portugal, D. João VI fixou-se no Paço, construção original de 1803 que lhe foi cedido por um abastado comerciante português. Ali manteve-se toda a linhagem dos Orleans e Bragança, tendo D. Pedro II e sua filha, a Princesa Isabel, nascido naquele palácio. O nome da Quinta vale-se da boa vista que se tinha a partir da construção instalada no topo da colina, de onde era possível ver a Baía de Guanabara. \n\nLocalizado no bairro de São Cristóvão, a Quinta da Boa Vista é um dos maiores parques urbanos da cidade, com cerca de 155 mil metros quadrados. Preserva os jardins e lagos criados pelo paisagista francês Auguste Glaziou; o antigo palácio da famíla real, onde hoje funciona o Museu Nacional; construções e estátuas de bronze originais, como o Templo de Apolo; e o monumental portão, presente de casamento do Duque de Northumberland ao jovem casal D. Pedro I e a Imperatriz, D. Leopoldina, que hoje recepciona os visitantes do Jardim Zoológico. \n\nFrequentadores de todas as idades aproveitam a ampla área verde para a prática de esportes durante todos os dias da semana. O pedalinho no lago principal, as quadras poliesportivas e passeio pelas grutas artificiais também atraem muitos jovens e crianças. Os agradáveis jardins também é muito procurados para a realização de piqueniques.",
+    "images" : [],
+    "latitude" : -22.904653,
+    "longitude" : -43.220694,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Quinta%20da%20Boa%20Vista%2F14887168267_364fec8e5c_k-1024x678.jpg?alt=media&token=ad864cdc-678d-453f-887e-d243b8dba740",
+    "nome" : "Quinta da Boa Vista"
+  }, {
+    "descricao" : "Inaugurado em 1909, o Theatro Municipal é uma das principais casas de espetáculo do Brasil e da América Latina. Na última reforma, foram encontradas  onde preciosidades como um grande painel original do italiano Eliseu Visconti foram resgatadas. Importantes áreas do Theatro foram restauradas, com destaque para a imponente águia de 350kg que enfeita o topo da construção, que recebeu 8 mil folhas de ouro 23 quilates de douramento.  \n\nAo longo de pouco mais de um século de história, o Theatro Municipal recebeu grandes artistas internacionais e importantes nomes da cultura brasileiras, incluindo representantes da dança, música, ópera e artes cênicas. O projeto que deu início à construção do Theatro Municipal foi criado a partir da fusão dos projetos arquitetônicos de Francisco de Oliveira Passos e do francês Albert Guilbert, empatados no concurso para criação do desenho do novo teatro. O desenho foi inspirado na Ópera de Paris. Desde a década de 30, o Theatro Municipal do Rio de Janeiro tem a preocupação de manter um corpo artístico próprio. Hoje é a única instituição cultural brasileira a manter simultaneamente um coro, uma orquestra sinfônica e uma companhia de ballet.",
+    "images" : [],
+    "latitude" : -22.909427,
+    "longitude" : -43.176318,
+    "mainImage" : "https://firebasestorage.googleapis.com/v0/b/me-leva-rio.appspot.com/o/Theatro%20Municipal%2Freformatmrj_210110_001.jpg?alt=media&token=c1b8d065-b5c8-4cc3-8895-a04630bd3fc8",
+    "nome" : "Theatro Municipal"
+  } ]
+} ]

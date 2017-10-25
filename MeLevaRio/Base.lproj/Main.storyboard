@@ -1,26 +1,146 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xry-l6-2zQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Me Leva Rio-->
+        <scene sceneID="aH3-E0-Y0G">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="Xpy-zs-tlO" customClass="LugaresListTableViewController" customModule="MeLevaRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2lQ-pf-H3L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LugarTableViewCell" id="VnZ-60-2s0" customClass="LugarTableViewCell" customModule="MeLevaRio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VnZ-60-2s0" id="emj-ac-ozy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Pfe-9J-oie" kind="show" identifier="lugaresDetail" id="5to-sA-TqZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xpy-zs-tlO" id="QAs-bk-TwS"/>
+                            <outlet property="delegate" destination="Xpy-zs-tlO" id="7AM-2A-BOJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Me Leva Rio" id="O7y-RN-LOx">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="9wZ-W0-vu6"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gH5-jf-hqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="605.60000000000002" y="70.614692653673174"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tCx-Dx-Av8">
+            <objects>
+                <viewController id="Pfe-9J-oie" customClass="DetailViewController" customModule="MeLevaRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZdL-n6-jZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZAq-BF-CGk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="faB-x4-bVN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-UY-1Fh">
+                                <rect key="frame" x="168" y="323" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="7PL-pD-lly"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-vJ-ci8">
+                                <rect key="frame" x="16" y="360" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.36078431372549019" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hbU-ga-GRA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <state key="normal" title="Me Leva Rio">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="meLevaRioButton:" destination="Pfe-9J-oie" eventType="touchUpInside" id="PZO-Sn-ZIF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Descrição do Lugar" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-ee-rxz">
+                                <rect key="frame" x="0.0" y="424" width="375" height="243"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-fv-gkh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="9Ev-5I-RDQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="top" secondItem="kzI-UY-1Fh" secondAttribute="bottom" id="2Qd-Dc-XVS"/>
+                            <constraint firstItem="xyS-ee-rxz" firstAttribute="top" secondItem="ibt-vJ-ci8" secondAttribute="bottom" constant="20" id="3Ik-TH-P01"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="trailing" secondItem="faB-x4-bVN" secondAttribute="trailingMargin" id="4mi-oW-PUE"/>
+                            <constraint firstItem="ibt-vJ-ci8" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leadingMargin" id="LQf-Hy-7v8"/>
+                            <constraint firstAttribute="trailing" secondItem="xyS-ee-rxz" secondAttribute="trailing" id="MiB-YU-0Hf"/>
+                            <constraint firstItem="ZAq-BF-CGk" firstAttribute="top" secondItem="xyS-ee-rxz" secondAttribute="bottom" id="OEi-mE-KsF"/>
+                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="centerX" secondItem="faB-x4-bVN" secondAttribute="centerX" id="SZK-6Q-ZSh"/>
+                            <constraint firstItem="LlU-fv-gkh" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="j9v-9o-i6r"/>
+                            <constraint firstItem="LlU-fv-gkh" firstAttribute="top" secondItem="ZdL-n6-jZF" secondAttribute="bottom" id="k1B-qA-H7e"/>
+                            <constraint firstAttribute="trailing" secondItem="LlU-fv-gkh" secondAttribute="trailing" id="ntb-Tg-5k3"/>
+                            <constraint firstItem="xyS-ee-rxz" firstAttribute="leading" secondItem="faB-x4-bVN" secondAttribute="leading" id="t9x-H4-0l2"/>
+                            <constraint firstItem="kzI-UY-1Fh" firstAttribute="top" secondItem="LlU-fv-gkh" secondAttribute="bottom" id="xN8-Ye-EAc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descricaoTextView" destination="xyS-ee-rxz" id="eKX-cH-W2a"/>
+                        <outlet property="detailPageControl" destination="kzI-UY-1Fh" id="8bZ-Cl-ei7"/>
+                        <outlet property="sliderScrollView" destination="LlU-fv-gkh" id="yk7-EQ-n1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uik-Ek-cQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464.8" y="70.614692653673174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="feP-FV-ys2">
+            <objects>
+                <navigationController id="Xry-l6-2zQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7il-an-J5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12549019607843137" green="0.36078431372549019" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xpy-zs-tlO" kind="relationship" relationship="rootViewController" id="3Tf-ai-0Ud"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="079-3X-j1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="71"/>
         </scene>
     </scenes>
 </document>

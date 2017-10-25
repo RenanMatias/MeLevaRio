@@ -6,11 +6,7 @@ target 'MeLevaRio' do
   use_frameworks!
 
   # Pods for MeLevaRio
-  pod 'ObjectMapper', '~> 2.2'
-
-  # Pods Firebase
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Auth'
+  pod 'ObjectMapper'
+  pod 'PINRemoteImage'
 
 end

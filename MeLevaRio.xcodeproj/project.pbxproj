@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B502321F1F03449500358EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502321E1F03449500358EDF /* AppDelegate.swift */; };
-		B50232211F03449500358EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50232201F03449500358EDF /* ViewController.swift */; };
 		B50232241F03449500358EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50232221F03449500358EDF /* Main.storyboard */; };
 		B50232261F03449500358EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50232251F03449500358EDF /* Assets.xcassets */; };
 		B50232291F03449500358EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50232271F03449500358EDF /* LaunchScreen.storyboard */; };
@@ -17,6 +16,15 @@
 		B502323E1F034DFF00358EDF /* Lugares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502323D1F034DFF00358EDF /* Lugares.swift */; };
 		B50232401F034EA100358EDF /* me-leva-rio-export.json in Resources */ = {isa = PBXBuildFile; fileRef = B502323F1F034EA100358EDF /* me-leva-rio-export.json */; };
 		B50232441F03567A00358EDF /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50232431F03567A00358EDF /* Lugar.swift */; };
+		B50CB1841F5B7ED100A2627D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CB1831F5B7ED100A2627D /* ImageView.swift */; };
+		B50CB1861F5B7EF300A2627D /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50CB1851F5B7EF300A2627D /* ImageView.xib */; };
+		B50CB1891F5B80CB00A2627D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CB1881F5B80CB00A2627D /* DetailViewController.swift */; };
+		B587DEBE1F44DBD300DC0286 /* LugaresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */; };
+		B587DECB1F45DC8D00DC0286 /* LugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DECA1F45DC8D00DC0286 /* LugarView.swift */; };
+		B587DECD1F45E05300DC0286 /* LugarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B587DECC1F45E05300DC0286 /* LugarView.xib */; };
+		B587DED31F4605EB00DC0286 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */; };
+		B587DED51F46105B00DC0286 /* LugarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */; };
+		B587DED71F4610F300DC0286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED61F4610F300DC0286 /* UIView+Extension.swift */; };
 		B5E66E281F049E8400A04497 /* lugaresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E66E271F049E8400A04497 /* lugaresViewModel.swift */; };
 		B5E66E2A1F04A45500A04497 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */; };
 		DC6AB55359BE34383B4C5EFD /* Pods_MeLevaRio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D78074FFBE6881532471A4 /* Pods_MeLevaRio.framework */; };
@@ -28,7 +36,6 @@
 		B3D78074FFBE6881532471A4 /* Pods_MeLevaRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeLevaRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B502321B1F03449500358EDF /* MeLevaRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLevaRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B502321E1F03449500358EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B50232201F03449500358EDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B50232231F03449500358EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B50232251F03449500358EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B50232281F03449500358EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +45,15 @@
 		B502323D1F034DFF00358EDF /* Lugares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugares.swift; sourceTree = "<group>"; };
 		B502323F1F034EA100358EDF /* me-leva-rio-export.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "me-leva-rio-export.json"; sourceTree = "<group>"; };
 		B50232431F03567A00358EDF /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		B50CB1831F5B7ED100A2627D /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B50CB1851F5B7EF300A2627D /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
+		B50CB1881F5B80CB00A2627D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresListTableViewController.swift; sourceTree = "<group>"; };
+		B587DECA1F45DC8D00DC0286 /* LugarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarView.swift; sourceTree = "<group>"; };
+		B587DECC1F45E05300DC0286 /* LugarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LugarView.xib; sourceTree = "<group>"; };
+		B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarTableViewCell.swift; sourceTree = "<group>"; };
+		B587DED61F4610F300DC0286 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B5E66E271F049E8400A04497 /* lugaresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lugaresViewModel.swift; sourceTree = "<group>"; };
 		B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +131,8 @@
 		B50232351F034A3900358EDF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B50232201F03449500358EDF /* ViewController.swift */,
-				B5E66E271F049E8400A04497 /* lugaresViewModel.swift */,
+				B587DEBB1F44DB5A00DC0286 /* LugaresList */,
+				B587DEBC1F44DB6900DC0286 /* LugaresDetail */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +140,8 @@
 		B50232361F034A4000358EDF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B587DED61F4610F300DC0286 /* UIView+Extension.swift */,
+				B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */,
 				B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */,
 			);
 			name = Extensions;
@@ -138,6 +156,44 @@
 				B50232301F03453500358EDF /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B50CB1871F5B808B00A2627D /* PicturesScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B50CB1831F5B7ED100A2627D /* ImageView.swift */,
+				B50CB1851F5B7EF300A2627D /* ImageView.xib */,
+			);
+			name = PicturesScrollView;
+			sourceTree = "<group>";
+		};
+		B587DEBB1F44DB5A00DC0286 /* LugaresList */ = {
+			isa = PBXGroup;
+			children = (
+				B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */,
+				B5E66E271F049E8400A04497 /* lugaresViewModel.swift */,
+				B587DEBF1F44DBFC00DC0286 /* LugaresListCell */,
+			);
+			name = LugaresList;
+			sourceTree = "<group>";
+		};
+		B587DEBC1F44DB6900DC0286 /* LugaresDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B50CB1881F5B80CB00A2627D /* DetailViewController.swift */,
+				B50CB1871F5B808B00A2627D /* PicturesScrollView */,
+			);
+			name = LugaresDetail;
+			sourceTree = "<group>";
+		};
+		B587DEBF1F44DBFC00DC0286 /* LugaresListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */,
+				B587DECA1F45DC8D00DC0286 /* LugarView.swift */,
+				B587DECC1F45E05300DC0286 /* LugarView.xib */,
+			);
+			name = LugaresListCell;
 			sourceTree = "<group>";
 		};
 		B7F89A5C37F6AC64007B79F6 /* Frameworks */ = {
@@ -187,12 +243,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Renan Matias";
 				TargetAttributes = {
 					B502321A1F03449400358EDF = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 672A5ZY4XW;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -222,6 +279,8 @@
 			files = (
 				B50232291F03449500358EDF /* LaunchScreen.storyboard in Resources */,
 				B50232311F03453500358EDF /* GoogleService-Info.plist in Resources */,
+				B587DECD1F45E05300DC0286 /* LugarView.xib in Resources */,
+				B50CB1861F5B7EF300A2627D /* ImageView.xib in Resources */,
 				B50232261F03449500358EDF /* Assets.xcassets in Resources */,
 				B50232241F03449500358EDF /* Main.storyboard in Resources */,
 				B50232401F034EA100358EDF /* me-leva-rio-export.json in Resources */,
@@ -283,11 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50CB1891F5B80CB00A2627D /* DetailViewController.swift in Sources */,
+				B50CB1841F5B7ED100A2627D /* ImageView.swift in Sources */,
+				B587DED31F4605EB00DC0286 /* UIImageView+Extensions.swift in Sources */,
 				B50232391F034B6200358EDF /* MeLevaRioRequest.swift in Sources */,
-				B50232211F03449500358EDF /* ViewController.swift in Sources */,
+				B587DED51F46105B00DC0286 /* LugarTableViewCell.swift in Sources */,
 				B5E66E281F049E8400A04497 /* lugaresViewModel.swift in Sources */,
 				B5E66E2A1F04A45500A04497 /* UIViewController+Extensions.swift in Sources */,
+				B587DED71F4610F300DC0286 /* UIView+Extension.swift in Sources */,
 				B502321F1F03449500358EDF /* AppDelegate.swift in Sources */,
+				B587DEBE1F44DBD300DC0286 /* LugaresListTableViewController.swift in Sources */,
+				B587DECB1F45DC8D00DC0286 /* LugarView.swift in Sources */,
 				B502323E1F034DFF00358EDF /* Lugares.swift in Sources */,
 				B50232441F03567A00358EDF /* Lugar.swift in Sources */,
 			);
@@ -325,7 +390,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -333,7 +400,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,7 +446,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -383,7 +456,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,7 +495,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RenanMatias.MeLevaRio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -432,7 +510,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RenanMatias.MeLevaRio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

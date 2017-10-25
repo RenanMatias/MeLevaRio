@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ViewController {
+extension UIViewController {
     
     func showNativeAlert(title: String, message: String, afirmativeAction: String, negativeAction: String, completeBlock: ((UIAlertAction) -> Void)?) {
         

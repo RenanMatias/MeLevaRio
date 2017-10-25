@@ -14,8 +14,8 @@ struct lugar: Mappable {
     // PROPERTIES
     
     var descricao = ""
-    var latitude = 0
-    var longitude = 0
+    var latitude = 0.0
+    var longitude = 0.0
     var mainImage = ""
     var nome = ""
     var images: [String] = []
