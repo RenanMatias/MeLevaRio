@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B502321F1F03449500358EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502321E1F03449500358EDF /* AppDelegate.swift */; };
+		B50232241F03449500358EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50232221F03449500358EDF /* Main.storyboard */; };
+		B50232261F03449500358EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50232251F03449500358EDF /* Assets.xcassets */; };
+		B50232291F03449500358EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50232271F03449500358EDF /* LaunchScreen.storyboard */; };
+		B50232311F03453500358EDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B50232301F03453500358EDF /* GoogleService-Info.plist */; };
+		B50232391F034B6200358EDF /* MeLevaRioRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50232381F034B6200358EDF /* MeLevaRioRequest.swift */; };
+		B502323E1F034DFF00358EDF /* Lugares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502323D1F034DFF00358EDF /* Lugares.swift */; };
+		B50232401F034EA100358EDF /* me-leva-rio-export.json in Resources */ = {isa = PBXBuildFile; fileRef = B502323F1F034EA100358EDF /* me-leva-rio-export.json */; };
+		B50232441F03567A00358EDF /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50232431F03567A00358EDF /* Lugar.swift */; };
+		B50CB1841F5B7ED100A2627D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CB1831F5B7ED100A2627D /* ImageView.swift */; };
+		B50CB1861F5B7EF300A2627D /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50CB1851F5B7EF300A2627D /* ImageView.xib */; };
+		B50CB1891F5B80CB00A2627D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CB1881F5B80CB00A2627D /* DetailViewController.swift */; };
+		B587DEBE1F44DBD300DC0286 /* LugaresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */; };
+		B587DECB1F45DC8D00DC0286 /* LugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DECA1F45DC8D00DC0286 /* LugarView.swift */; };
+		B587DECD1F45E05300DC0286 /* LugarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B587DECC1F45E05300DC0286 /* LugarView.xib */; };
+		B587DED31F4605EB00DC0286 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */; };
+		B587DED51F46105B00DC0286 /* LugarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */; };
+		B587DED71F4610F300DC0286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587DED61F4610F300DC0286 /* UIView+Extension.swift */; };
+		B5E66E281F049E8400A04497 /* lugaresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E66E271F049E8400A04497 /* lugaresViewModel.swift */; };
+		B5E66E2A1F04A45500A04497 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */; };
+		DC6AB55359BE34383B4C5EFD /* Pods_MeLevaRio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D78074FFBE6881532471A4 /* Pods_MeLevaRio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		243778AD083B2928007328EE /* Pods-MeLevaRio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLevaRio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeLevaRio/Pods-MeLevaRio.debug.xcconfig"; sourceTree = "<group>"; };
+		87D0D8259FE8C698A0722613 /* Pods-MeLevaRio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLevaRio.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeLevaRio/Pods-MeLevaRio.release.xcconfig"; sourceTree = "<group>"; };
+		B3D78074FFBE6881532471A4 /* Pods_MeLevaRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeLevaRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502321B1F03449500358EDF /* MeLevaRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLevaRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502321E1F03449500358EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B50232231F03449500358EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B50232251F03449500358EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B50232281F03449500358EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B502322A1F03449500358EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50232301F03453500358EDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B50232381F034B6200358EDF /* MeLevaRioRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeLevaRioRequest.swift; sourceTree = "<group>"; };
+		B502323D1F034DFF00358EDF /* Lugares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugares.swift; sourceTree = "<group>"; };
+		B502323F1F034EA100358EDF /* me-leva-rio-export.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "me-leva-rio-export.json"; sourceTree = "<group>"; };
+		B50232431F03567A00358EDF /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		B50CB1831F5B7ED100A2627D /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B50CB1851F5B7EF300A2627D /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
+		B50CB1881F5B80CB00A2627D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresListTableViewController.swift; sourceTree = "<group>"; };
+		B587DECA1F45DC8D00DC0286 /* LugarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarView.swift; sourceTree = "<group>"; };
+		B587DECC1F45E05300DC0286 /* LugarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LugarView.xib; sourceTree = "<group>"; };
+		B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarTableViewCell.swift; sourceTree = "<group>"; };
+		B587DED61F4610F300DC0286 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B5E66E271F049E8400A04497 /* lugaresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lugaresViewModel.swift; sourceTree = "<group>"; };
+		B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50232181F03449400358EDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6AB55359BE34383B4C5EFD /* Pods_MeLevaRio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50232121F03449400358EDF = {
+			isa = PBXGroup;
+			children = (
+				B502321D1F03449500358EDF /* MeLevaRio */,
+				B502321C1F03449500358EDF /* Products */,
+				C7B7A38E090F73D74A3974F6 /* Pods */,
+				B7F89A5C37F6AC64007B79F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B502321C1F03449500358EDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B502321B1F03449500358EDF /* MeLevaRio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B502321D1F03449500358EDF /* MeLevaRio */ = {
+			isa = PBXGroup;
+			children = (
+				B502321E1F03449500358EDF /* AppDelegate.swift */,
+				B50232351F034A3900358EDF /* Controllers */,
+				B50232321F034A1400358EDF /* Model */,
+				B50232361F034A4000358EDF /* Extensions */,
+				B50232331F034A2200358EDF /* Networking */,
+				B50232341F034A2D00358EDF /* Storyboards */,
+				B50232371F034A5200358EDF /* Supporting Files */,
+			);
+			path = MeLevaRio;
+			sourceTree = "<group>";
+		};
+		B50232321F034A1400358EDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B502323F1F034EA100358EDF /* me-leva-rio-export.json */,
+				B502323D1F034DFF00358EDF /* Lugares.swift */,
+				B50232431F03567A00358EDF /* Lugar.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B50232331F034A2200358EDF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B50232381F034B6200358EDF /* MeLevaRioRequest.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		B50232341F034A2D00358EDF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B50232221F03449500358EDF /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B50232351F034A3900358EDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B587DEBB1F44DB5A00DC0286 /* LugaresList */,
+				B587DEBC1F44DB6900DC0286 /* LugaresDetail */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B50232361F034A4000358EDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B587DED61F4610F300DC0286 /* UIView+Extension.swift */,
+				B587DED21F4605EB00DC0286 /* UIImageView+Extensions.swift */,
+				B5E66E291F04A45500A04497 /* UIViewController+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B50232371F034A5200358EDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B50232251F03449500358EDF /* Assets.xcassets */,
+				B50232271F03449500358EDF /* LaunchScreen.storyboard */,
+				B502322A1F03449500358EDF /* Info.plist */,
+				B50232301F03453500358EDF /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B50CB1871F5B808B00A2627D /* PicturesScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B50CB1831F5B7ED100A2627D /* ImageView.swift */,
+				B50CB1851F5B7EF300A2627D /* ImageView.xib */,
+			);
+			name = PicturesScrollView;
+			sourceTree = "<group>";
+		};
+		B587DEBB1F44DB5A00DC0286 /* LugaresList */ = {
+			isa = PBXGroup;
+			children = (
+				B587DEBD1F44DBD300DC0286 /* LugaresListTableViewController.swift */,
+				B5E66E271F049E8400A04497 /* lugaresViewModel.swift */,
+				B587DEBF1F44DBFC00DC0286 /* LugaresListCell */,
+			);
+			name = LugaresList;
+			sourceTree = "<group>";
+		};
+		B587DEBC1F44DB6900DC0286 /* LugaresDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B50CB1881F5B80CB00A2627D /* DetailViewController.swift */,
+				B50CB1871F5B808B00A2627D /* PicturesScrollView */,
+			);
+			name = LugaresDetail;
+			sourceTree = "<group>";
+		};
+		B587DEBF1F44DBFC00DC0286 /* LugaresListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B587DED41F46105B00DC0286 /* LugarTableViewCell.swift */,
+				B587DECA1F45DC8D00DC0286 /* LugarView.swift */,
+				B587DECC1F45E05300DC0286 /* LugarView.xib */,
+			);
+			name = LugaresListCell;
+			sourceTree = "<group>";
+		};
+		B7F89A5C37F6AC64007B79F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3D78074FFBE6881532471A4 /* Pods_MeLevaRio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7B7A38E090F73D74A3974F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243778AD083B2928007328EE /* Pods-MeLevaRio.debug.xcconfig */,
+				87D0D8259FE8C698A0722613 /* Pods-MeLevaRio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B502321A1F03449400358EDF /* MeLevaRio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B502322D1F03449500358EDF /* Build configuration list for PBXNativeTarget "MeLevaRio" */;
+			buildPhases = (
+				8C1737B01049BF51368E527E /* [CP] Check Pods Manifest.lock */,
+				B50232171F03449400358EDF /* Sources */,
+				B50232181F03449400358EDF /* Frameworks */,
+				B50232191F03449400358EDF /* Resources */,
+				A3A0496DF933B3CB74886AAB /* [CP] Embed Pods Frameworks */,
+				F0D6B1567EEB7D9AF9900CFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeLevaRio;
+			productName = MeLevaRio;
+			productReference = B502321B1F03449500358EDF /* MeLevaRio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50232131F03449400358EDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Renan Matias";
+				TargetAttributes = {
+					B502321A1F03449400358EDF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 672A5ZY4XW;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B50232161F03449400358EDF /* Build configuration list for PBXProject "MeLevaRio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50232121F03449400358EDF;
+			productRefGroup = B502321C1F03449500358EDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B502321A1F03449400358EDF /* MeLevaRio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50232191F03449400358EDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50232291F03449500358EDF /* LaunchScreen.storyboard in Resources */,
+				B50232311F03453500358EDF /* GoogleService-Info.plist in Resources */,
+				B587DECD1F45E05300DC0286 /* LugarView.xib in Resources */,
+				B50CB1861F5B7EF300A2627D /* ImageView.xib in Resources */,
+				B50232261F03449500358EDF /* Assets.xcassets in Resources */,
+				B50232241F03449500358EDF /* Main.storyboard in Resources */,
+				B50232401F034EA100358EDF /* me-leva-rio-export.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C1737B01049BF51368E527E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A0496DF933B3CB74886AAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeLevaRio/Pods-MeLevaRio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D6B1567EEB7D9AF9900CFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeLevaRio/Pods-MeLevaRio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50232171F03449400358EDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50CB1891F5B80CB00A2627D /* DetailViewController.swift in Sources */,
+				B50CB1841F5B7ED100A2627D /* ImageView.swift in Sources */,
+				B587DED31F4605EB00DC0286 /* UIImageView+Extensions.swift in Sources */,
+				B50232391F034B6200358EDF /* MeLevaRioRequest.swift in Sources */,
+				B587DED51F46105B00DC0286 /* LugarTableViewCell.swift in Sources */,
+				B5E66E281F049E8400A04497 /* lugaresViewModel.swift in Sources */,
+				B5E66E2A1F04A45500A04497 /* UIViewController+Extensions.swift in Sources */,
+				B587DED71F4610F300DC0286 /* UIView+Extension.swift in Sources */,
+				B502321F1F03449500358EDF /* AppDelegate.swift in Sources */,
+				B587DEBE1F44DBD300DC0286 /* LugaresListTableViewController.swift in Sources */,
+				B587DECB1F45DC8D00DC0286 /* LugarView.swift in Sources */,
+				B502323E1F034DFF00358EDF /* Lugares.swift in Sources */,
+				B50232441F03567A00358EDF /* Lugar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B50232221F03449500358EDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50232231F03449500358EDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B50232271F03449500358EDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50232281F03449500358EDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B502322B1F03449500358EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B502322C1F03449500358EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B502322E1F03449500358EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243778AD083B2928007328EE /* Pods-MeLevaRio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 672A5ZY4XW;
+				INFOPLIST_FILE = MeLevaRio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RenanMatias.MeLevaRio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B502322F1F03449500358EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D0D8259FE8C698A0722613 /* Pods-MeLevaRio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 672A5ZY4XW;
+				INFOPLIST_FILE = MeLevaRio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RenanMatias.MeLevaRio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50232161F03449400358EDF /* Build configuration list for PBXProject "MeLevaRio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B502322B1F03449500358EDF /* Debug */,
+				B502322C1F03449500358EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B502322D1F03449500358EDF /* Build configuration list for PBXNativeTarget "MeLevaRio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B502322E1F03449500358EDF /* Debug */,
+				B502322F1F03449500358EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50232131F03449400358EDF /* Project object */;
+}
